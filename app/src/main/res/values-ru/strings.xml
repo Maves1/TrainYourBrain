@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Train Your Brain!</string>
+    <string name="addition">Сложение</string>
+    <string name="subtraction">Вычитание</string>
+    <string name="multiplication">Умножение</string>
+    <string name="play_again">Сыграть еще!</string>
+    <string name="info_your_result">Результат:</string>
+    <string name="info_return">Главное меню</string>
+    <string name="statistics">Статистика</string>
+    <string name="maths">Математика</string>
+    <string name="color_cards">Цветные Карточки</string>
+</resources>

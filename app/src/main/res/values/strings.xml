@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Train Your Brain!</string>
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="play_again">Play again!</string>
+    <string name="info_your_result">Your result:</string>
+    <string name="info_return">Return!</string>
+    <string name="statistics">Statistics</string>
+    <string name="maths">Maths</string>
+    <string name="color_cards">Color Cards</string>
+</resources>

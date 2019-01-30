@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutGame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.mavesoft.trainyourbrain.GameActivity">
+
+    <TextView
+        android:id="@+id/textViewTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewTimer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSum">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="checkAnswer"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="#5aff8c"
+            android:onClick="checkAnswer"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="#c194ff"
+            android:onClick="checkAnswer"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="#ff676e"
+            android:onClick="checkAnswer"
+            android:padding="20dp" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutGameEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewEndInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#007ecc"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonPlayAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="playAgainClick"
+            android:padding="18dp"
+            android:text="@string/play_again" />
+
+        <Button
+            android:id="@+id/buttonReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="returnClick"
+            android:padding="18dp"
+            android:text="@string/info_return" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
